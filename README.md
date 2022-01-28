@@ -25,3 +25,4 @@ The project files and folders are organized as follows:
 ---
 * Manuel Fernando Guevara Dela Cruz ( )
 * Luis Carlo Romanini neres (ner21002@byui.edu) 
+*Ibraim Calvo Rivas
