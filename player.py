@@ -24,7 +24,6 @@
         self.card = []
         self.score = 300
         self.is_playing = True
-        self.card_values = []
 
         for i in range(2):
             card = Card()
