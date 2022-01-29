@@ -23,6 +23,6 @@ The project files and folders are organized as follows:
 
 ## Authors
 ---
-* Manuel Fernando Guevara Dela Cruz ( )
+* Manuel Fernando Guevara Dela Cruz (gue21024@byui.edu )
 * Luis Carlo Romanini neres (ner21002@byui.edu) 
 * Ibraim Calvo Rivas (cal21036@byui.edu)
