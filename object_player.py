@@ -40,7 +40,7 @@
         print('------------------------------')
         for i in range(len(self.card)):
             card = self.card[i]
-            card.shuffle()
+            card.play()
             self.card_values.append(card.value)
         self.card_values = [int(i) for i in self.card_values]
         print(f"\nThe card is {self.card_values[0]}")
