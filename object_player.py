@@ -1,29 +1,53 @@
  
  
  #player:
- #Object: player
- """A person who plays the game. 
-    
-    The responsibility of a player is to get cards each time is the turn to play.
 
-    Behavior:
+
+ class Player:
+    """A person who directs the game. 
     
-        decide if the next card will be a lower value or will be a higher value than the card shown.
+    The responsibility of a Director is to control the sequence of play.
 
     Attributes:
-        
-        guessing (boolean L/H): the player decide if the turn is for Low or for High card value.
-        outcomes (List[win, lose]): depending of the outcomes.
-        earn points (int): The points earned if the guess is correct for one round of play.
-        lose points (int) The points lost if the guess is incorrect for one round of play.
-        total_score (int): The score for the player in the entire game.
-        finish the game (boolean): the player decide Y/N to play.
-
-    Methods names:
-        def ask_for_a_card(self)
-        def guessing(self)
-        def decide_to_continue_playing(self)
-        def close(self)
-
-
+        card (List[card]): A list of card instances.
+        score (int): The score for the entire game.
+        is_playing (boolean): Whether or not the game is being played.
+        card_values (List[card_value]): A list of Card values
     """
+
+    def __init__(self):
+        """Constructs a new Director.
+        
+        Args:
+            self (Director): an instance of Director.
+        """
+
+
+    def start_game(self):
+        """Starts the game by running the main game loop.
+        
+        Args:
+            self (Director): an instance of Director.
+        """
+
+    def do_updates(self):
+        """Updates the player's score.
+
+        Args:
+            self (Director): An instance of Director.
+        """
+    
+    def get_input(self):
+        """Ask the user if the card is higher or lower, and give score
+
+        Args:
+            self (Director): An instance of Director.
+        """
+
+
+    def do_output(self):
+        """Displays the the score.and value of the new card 
+
+        Args:
+            self (Director): An instance of Director.
+        """
