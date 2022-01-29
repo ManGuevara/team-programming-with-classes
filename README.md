@@ -15,7 +15,12 @@ project folder. Select the main module inside the hilo folder and click the "run
 ---
 The project files and folders are organized as follows:
 ```
-## This will be available soon
+root                    (project root folder)
++-- hilo                (source code for game)
+  +-- game              (specific classes)
+  +-- __main__.py       (program entry point)
++-- README.md           (general info)
+```
 
 ## Required Technologies
 ---
