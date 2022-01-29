@@ -1,4 +1,4 @@
- 
+ from game.card import Card
  
  #player:
 
@@ -16,19 +16,29 @@
     """
 
     def __init__(self):
-        """Constructs a new Director.
+        """Constructs a new Player.
         
         Args:
-            self (Director): an instance of Director.
+            self (Player): an instance of Player.
         """
+        self.card = []
+        self.score = 300
+        self.is_playing = True
+        self.card_values = []
+
+        for i in range(2):
+            card = Card()
+            self.card.append(card)
 
 
     def start_game(self):
-        """Starts the game by running the main game loop.
-        
-        Args:
-            self (Director): an instance of Director.
+        """This is the main structure for the game to run. it will start the game, calling the 
+        functions do_uptade, get_input, and do_output. It also control the loop game.
         """
+        while self.is_playing:
+            self.do_updates()
+            self.get_input()
+            self.do_output() 
 
     def do_updates(self):
         """Updates the player's score.
