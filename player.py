@@ -60,6 +60,9 @@
         Args:
             self (Director): An instance of Director.
         """
+        print(f"Next card was: {self.card_values[1]}")
+        print(f"Score is: {self.score}")
+        self.continue_playing(self.score)
      
     def continue_playing(self, score):        
         """ask if the player wants to continue playing
@@ -68,3 +71,18 @@
             self (Director): An instance of Director.
             score (int): The score for the entire game.
         """
+        play_again = ""
+          if score > 0: 
+             play_again = input("play again?[y/n] ")
+             if (play_again == "no" or play_again == "n") : 
+                print(f'\n***Thanks for playing your score is: {self.score}***')
+                self.is_playing = False
+             elif (play_again == "y" or play_again == "yes"): 
+                self.is_playing = True
+             else: 
+                False
+              
+        elif score <= 0 :
+            self.is_playing = False
+            print(f'Thanks for playing your score is: {self.score}')
+      
