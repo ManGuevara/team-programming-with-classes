@@ -51,3 +51,11 @@
         Args:
             self (Director): An instance of Director.
         """
+     
+    def continue_playing(self, score):        
+        """ask if the player wants to continue playing
+
+        Args:
+            self (Director): An instance of Director.
+            score (int): The score for the entire game.
+        """
