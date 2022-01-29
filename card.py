@@ -21,7 +21,7 @@ class Card:
             self card (Card): An instance of Card.
             
         """
-        self.card=0
+        self.value=0
 
 # 3) Create the random(self) method. Use the following method comment.
     """Generates a new random value between 1 and 13. 
@@ -32,6 +32,6 @@ class Card:
     """
     def play(self):
         
-        self.card = random.randint(1, 13) 
+        self.value = random.randint(1, 13) 
 
        
