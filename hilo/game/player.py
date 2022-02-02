@@ -1,11 +1,11 @@
- from game.card import Card
- 
- #player:
+from game.card import Card
+
+#player:
 
 
- class Player:
+class Player:
     """A person who directs the game. 
-    
+
     The responsibility of a Director is to control the sequence of play.
 
     Attributes:
@@ -82,7 +82,7 @@
         print(f"Next card was: {self.card_values[1]}")
         print(f"Score is: {self.score}")
         self.continue_playing(self.score)
-     
+        
     def continue_playing(self, score):        
         """ask if the player wants to continue playing
 
@@ -91,16 +91,16 @@
             score (int): The score for the entire game.
         """
         play_again = ""
-          if score > 0: 
-             play_again = input("play again?[y/n] ")
-             if (play_again == "no" or play_again == "n") : 
+        if score > 0: 
+            play_again = input("play again?[y/n] ")
+            if (play_again == "no" or play_again == "n") : 
                 print(f'\n***Thanks for playing your score is: {self.score}***')
                 self.is_playing = False
-             elif (play_again == "y" or play_again == "yes"): 
+            elif (play_again == "y" or play_again == "yes"): 
                 self.is_playing = True
-             else: 
+            else: 
                 False
-              
+                
         elif score <= 0 :
             self.is_playing = False
             print(f'Thanks for playing your score is: {self.score}')
